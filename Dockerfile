@@ -15,6 +15,6 @@ RUN npm run build
 # Remove dev deps after build
 RUN npm prune --omit=dev
 
-EXPOSE 3000
+EXPOSE 4000
 
 CMD ["npm", "start"]
