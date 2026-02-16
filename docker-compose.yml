@@ -1,0 +1,9 @@
+services:
+  plex-meta-tvdb:
+    build: .
+    container_name: plex-meta-tvdb
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env
